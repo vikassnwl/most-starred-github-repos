@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, flash
 import requests, pygal
 from pygal.style import Style
+import urllib.parse
 
 app = Flask(__name__)
 
@@ -11,8 +12,9 @@ def index():
     chart_data = ''
     if request.method == 'POST':
         lang = request.form.get('lang')
+        lang_enc = urllib.parse.quote(lang) # encoded
         height = request.form.get('height')
-        url = 'https://api.github.com/search/repositories?q=language:'+lang+'&sort=stars'
+        url = 'https://api.github.com/search/repositories?q=language:'+lang_enc+'&sort=stars'
         r = requests.get(url)
         data = r.json()
         try:
