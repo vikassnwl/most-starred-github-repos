@@ -1,7 +1,7 @@
 # most-starred-github-repos
 Search most-starred projects on github filtered by programming language.
 
-![screenshot](https://github.com/vikassnwl/readme-images/raw/master/screenshot-127.0.0.1_5000-2020.09.13-20_05_04.png)
+[![screenshot-127-0-0-1-5000-2020-09-13-20-05-04.png](https://i.postimg.cc/022YPtNV/screenshot-127-0-0-1-5000-2020-09-13-20-05-04.png)](https://postimg.cc/0rFMC0DS)
 
 pygal library is used to make this bar chart.
 
